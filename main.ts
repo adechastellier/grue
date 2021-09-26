@@ -26,6 +26,7 @@ radio.onReceivedString(function (receivedString) {
             # # # # .
             # # # . .
             `)
+        Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, 30)
     } else if (receivedString == "rapproche") {
         basic.showLeds(`
             . . # # #
@@ -34,6 +35,7 @@ radio.onReceivedString(function (receivedString) {
             . # # # #
             . . # # #
             `)
+        Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Reverse, 30)
     } else if (receivedString == "gauche") {
         basic.showLeds(`
             . . # . .
